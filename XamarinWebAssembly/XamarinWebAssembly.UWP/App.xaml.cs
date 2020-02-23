@@ -51,7 +51,7 @@ namespace XamarinWebAssembly.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
                 var assembliesToInclude = new List<Assembly>();
-                assembliesToInclude.Add(typeof(PancakeViewRenderer).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(PancakeViewRenderer).GetTypeInfo().Assembly);
                 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
