@@ -40,8 +40,6 @@ namespace XamarinWebAssembly.UWP
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-
-
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -53,7 +51,7 @@ namespace XamarinWebAssembly.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
                 var assembliesToInclude = new List<Assembly>();
-                assembliesToInclude.Add(typeof(Xamarin.Forms.PancakeView.UWP.PancakeViewRenderer).GetTypeInfo().Assembly);
+                //assembliesToInclude.Add(typeof(PancakeViewRenderer).GetTypeInfo().Assembly);
                 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)

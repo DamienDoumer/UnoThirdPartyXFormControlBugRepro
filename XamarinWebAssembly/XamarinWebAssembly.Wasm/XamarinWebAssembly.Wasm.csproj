@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
+    <AssetTargetFallback>uap10.0.16299</AssetTargetFallback>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<WasmHead>true</WasmHead>
 		<DefineConstants>$(DefineConstants);__WASM__</DefineConstants>
@@ -46,7 +47,6 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.1" />
 		<PackageReference Include="Uno.Xamarin.Forms.Platform" Version="4.3.4" />
 		<PackageReference Include="Uno.Wasm.Bootstrap" Version="1.0.10" />
-		<PackageReference Include="Xamarin.Forms.PancakeView" Version="1.3.7" />
 		<DotNetCliToolReference Include="Uno.Wasm.Bootstrap.Cli" Version="1.0.10" />
 	</ItemGroup>
 </Project>
